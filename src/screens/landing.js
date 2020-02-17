@@ -41,10 +41,36 @@ class Landing extends Component {
               <View
                 style={{
                   backgroundColor: 'white',
+                  width: wp('20%'),
+                  height: 46,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Text>Indore</Text>
+              </View>
+              <View
+                style={{
+                  backgroundColor: 'white',
+                  width: wp('8%'),
+                  height: 46,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <Icon
+                  name="angle-down"
+                  size={20}
+                  color="black"
+                  style={{backgroundColor: 'white'}}
+                />
+              </View>
+              <View
+                style={{
+                  backgroundColor: 'white',
                   width: wp('10%'),
                   height: 46,
                   justifyContent: 'center',
                   alignItems: 'center',
+                  marginLeft: wp('3%'),
                 }}>
                 <Icon
                   name="search"
@@ -54,7 +80,8 @@ class Landing extends Component {
                 />
               </View>
               <TextInput
-                style={{width: wp('65%'), height: 46, backgroundColor: 'white'}}
+                placeholder="Search doctors, specialities, clinic..."
+                style={{width: wp('40%'), height: 46, backgroundColor: 'white'}}
               />
               <TouchableNativeFeedback>
                 <View
@@ -117,7 +144,7 @@ class Landing extends Component {
               this.setState({enableScrollViewScroll: false});
             }}
             style={{
-              maxHeight: hp('45%'),
+              maxHeight: hp('35%'),
               backgroundColor: 'white',
             }}>
             <View
@@ -342,7 +369,16 @@ class Landing extends Component {
               </TouchableNativeFeedback>
             </ScrollView>
           </View>
-          <View style={{minHeight: hp('20%')}}>
+          <View
+            style={{
+              minHeight: hp('25%'),
+              marginTop: hp('3%'),
+              backgroundColor: 'white',
+            }}>
+            <Text
+              style={{marginLeft: wp('3%'), marginTop: hp('1%'), fontSize: 18}}>
+              Find doctors in top specialities
+            </Text>
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}

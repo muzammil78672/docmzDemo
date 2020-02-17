@@ -18,6 +18,7 @@ import {
 } from 'react-native-responsive-screen';
 
 import LandingScreen from './src/screens/landing';
+import MohallaLandingScreen from './src/screens/mohallaLanding';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,7 +53,7 @@ const App = () => {
           />
           <Tab.Screen
             name="Appointments"
-            component={LandingScreen}
+            component={MohallaLandingScreen}
             options={{
               tabBarIcon: ({color, size}) => (
                 <Icon name="clock-o" size={20} color="white" />
