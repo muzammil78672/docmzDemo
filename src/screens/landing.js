@@ -11,6 +11,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import AwesomeButton from 'react-native-really-awesome-button';
 
 class Landing extends Component {
   state = {
@@ -110,9 +111,21 @@ class Landing extends Component {
               justifyContent: 'space-evenly',
               alignItems: 'center',
             }}>
-            <TouchableNativeFeedback
+            <AwesomeButton
+              backgroundColor={
+                this.state.selectedOption === 1 ? 'yellow' : 'gray'
+              }
+              backgroundActive={
+                this.state.selectedOption === 1 ? 'yellow' : 'gray'
+              }
+              backgroundDarker={
+                this.state.selectedOption === 1 ? 'yellow' : 'gray'
+              }
+              textColor={this.state.selectedOption === 1 ? 'gray' : 'white'}
+              height={hp('10')}
+              width={hp('20')}
               onPress={() => this.setState({selectedOption: 1})}>
-              <View
+              {/* <View
                 style={{
                   minHeight: hp('10%'),
                   width: hp('20%'),
@@ -122,11 +135,24 @@ class Landing extends Component {
                   justifyContent: 'center',
                 }}>
                 <Text style={{textAlign: 'center'}}>Consult Now</Text>
-              </View>
-            </TouchableNativeFeedback>
-            <TouchableNativeFeedback
+              </View> */}
+              Consult Now
+            </AwesomeButton>
+            <AwesomeButton
+              backgroundColor={
+                this.state.selectedOption === 2 ? 'yellow' : 'gray'
+              }
+              backgroundActive={
+                this.state.selectedOption === 2 ? 'yellow' : 'gray'
+              }
+              backgroundDarker={
+                this.state.selectedOption === 2 ? 'yellow' : 'gray'
+              }
+              textColor={this.state.selectedOption === 2 ? 'gray' : 'white'}
+              height={hp('10')}
+              width={hp('20')}
               onPress={() => this.setState({selectedOption: 2})}>
-              <View
+              {/* <View
                 style={{
                   minHeight: hp('10%'),
                   width: hp('20%'),
@@ -136,8 +162,9 @@ class Landing extends Component {
                   justifyContent: 'center',
                 }}>
                 <Text style={{textAlign: 'center'}}>Schedule</Text>
-              </View>
-            </TouchableNativeFeedback>
+              </View> */}
+              Schedule
+            </AwesomeButton>
           </View>
           <View
             onStartShouldSetResponderCapture={() => {

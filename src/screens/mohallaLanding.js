@@ -216,6 +216,152 @@ class MohallaLanding extends Component {
           </View>
           <View
             style={{
+              minHeight: hp('10%'),
+              marginTop: hp('3%'),
+              backgroundColor: 'white',
+            }}>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+                backgroundColor: 'lightgray',
+              }}>
+              <Text>RECENT SEARCHES</Text>
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+              <Text style={{color: 'red'}}>Delete all recent searches</Text>
+            </View>
+          </View>
+          <View
+            style={{
+              minHeight: hp('25%'),
+              marginTop: hp('3%'),
+              backgroundColor: 'white',
+            }}>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+                backgroundColor: 'lightgray',
+              }}>
+              <Text>POPULAR SEARCHES</Text>
+              <Text style={{fontWeight: 'bold', color: 'blue', fontSize: 16}}>
+                View all
+              </Text>
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+            <View
+              style={{
+                minHeight: hp('7%'),
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: wp('5%'),
+                alignItems: 'center',
+              }}>
+              <Text>Lorem ipsum</Text>
+              <Icon name="angle-right" size={25} color="black" />
+            </View>
+          </View>
+          <View
+            style={{
               minHeight: hp('25%'),
               marginTop: hp('3%'),
               backgroundColor: 'white',
