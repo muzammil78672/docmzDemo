@@ -12,6 +12,8 @@ import {
 } from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+import {Colors} from '../constants';
+
 class MohallaLanding extends Component {
   render() {
     return (
@@ -21,7 +23,7 @@ class MohallaLanding extends Component {
             minHeight: hp('12%'),
             width: wp('100%'),
             justifyContent: 'center',
-            backgroundColor: 'purple',
+            backgroundColor: Colors.purple,
           }}>
           <View
             style={{
@@ -31,7 +33,7 @@ class MohallaLanding extends Component {
             }}>
             <View
               style={{
-                backgroundColor: 'white',
+                backgroundColor: Colors.white,
                 width: wp('20%'),
                 height: 46,
                 justifyContent: 'center',
@@ -41,7 +43,7 @@ class MohallaLanding extends Component {
             </View>
             <View
               style={{
-                backgroundColor: 'white',
+                backgroundColor: Colors.white,
                 width: wp('8%'),
                 height: 46,
                 justifyContent: 'center',
@@ -50,13 +52,13 @@ class MohallaLanding extends Component {
               <Icon
                 name="angle-down"
                 size={20}
-                color="black"
-                style={{backgroundColor: 'white'}}
+                color={Colors.black}
+                style={{backgroundColor: Colors.white}}
               />
             </View>
             <View
               style={{
-                backgroundColor: 'white',
+                backgroundColor: Colors.white,
                 width: wp('10%'),
                 height: 46,
                 justifyContent: 'center',
@@ -66,18 +68,22 @@ class MohallaLanding extends Component {
               <Icon
                 name="search"
                 size={20}
-                color="gray"
-                style={{backgroundColor: 'white'}}
+                color={Colors.gray}
+                style={{backgroundColor: Colors.white}}
               />
             </View>
             <TextInput
               placeholder="Search doctors, specialities, clinic..."
-              style={{width: wp('40%'), height: 46, backgroundColor: 'white'}}
+              style={{
+                width: wp('40%'),
+                height: 46,
+                backgroundColor: Colors.white,
+              }}
             />
             <TouchableNativeFeedback>
               <View
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   width: wp('10%'),
                   height: 46,
                   justifyContent: 'center',
@@ -87,8 +93,8 @@ class MohallaLanding extends Component {
                 <Icon
                   name="filter"
                   size={20}
-                  color="gray"
-                  style={{backgroundColor: 'white'}}
+                  color={Colors.gray}
+                  style={{backgroundColor: Colors.white}}
                 />
               </View>
             </TouchableNativeFeedback>
@@ -108,7 +114,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                   marginTop: hp('3%'),
@@ -121,7 +127,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -133,7 +139,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -145,7 +151,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -157,7 +163,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -169,7 +175,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -181,7 +187,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -193,7 +199,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                 }}>
@@ -205,7 +211,7 @@ class MohallaLanding extends Component {
                 style={{
                   minHeight: hp('15%'),
                   width: hp('15%'),
-                  backgroundColor: 'white',
+                  backgroundColor: Colors.white,
                   elevation: 2,
                   justifyContent: 'center',
                   marginTop: hp('3%'),
@@ -218,7 +224,7 @@ class MohallaLanding extends Component {
             style={{
               minHeight: hp('10%'),
               marginTop: hp('3%'),
-              backgroundColor: 'white',
+              backgroundColor: Colors.white,
             }}>
             <View
               style={{
@@ -227,7 +233,7 @@ class MohallaLanding extends Component {
                 justifyContent: 'space-between',
                 paddingHorizontal: wp('5%'),
                 alignItems: 'center',
-                backgroundColor: 'lightgray',
+                backgroundColor: Colors.lightGray,
               }}>
               <Text>RECENT SEARCHES</Text>
             </View>
@@ -240,7 +246,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -251,7 +257,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -259,14 +265,16 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
-              <Text style={{color: 'red'}}>Delete all recent searches</Text>
+              <Text style={{color: Colors.red}}>
+                Delete all recent searches
+              </Text>
             </View>
           </View>
           <View
             style={{
               minHeight: hp('25%'),
               marginTop: hp('3%'),
-              backgroundColor: 'white',
+              backgroundColor: Colors.white,
             }}>
             <View
               style={{
@@ -275,10 +283,11 @@ class MohallaLanding extends Component {
                 justifyContent: 'space-between',
                 paddingHorizontal: wp('5%'),
                 alignItems: 'center',
-                backgroundColor: 'lightgray',
+                backgroundColor: Colors.lightGray,
               }}>
               <Text>POPULAR SEARCHES</Text>
-              <Text style={{fontWeight: 'bold', color: 'blue', fontSize: 16}}>
+              <Text
+                style={{fontWeight: 'bold', color: Colors.blue, fontSize: 16}}>
                 View all
               </Text>
             </View>
@@ -291,7 +300,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -302,7 +311,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -313,7 +322,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -324,7 +333,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -335,7 +344,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -346,7 +355,7 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
             <View
               style={{
@@ -357,14 +366,14 @@ class MohallaLanding extends Component {
                 alignItems: 'center',
               }}>
               <Text>Lorem ipsum</Text>
-              <Icon name="angle-right" size={25} color="black" />
+              <Icon name="angle-right" size={25} color={Colors.black} />
             </View>
           </View>
           <View
             style={{
               minHeight: hp('25%'),
               marginTop: hp('3%'),
-              backgroundColor: 'white',
+              backgroundColor: Colors.white,
             }}>
             <Text
               style={{marginLeft: wp('3%'), marginTop: hp('1%'), fontSize: 18}}>
@@ -385,7 +394,7 @@ class MohallaLanding extends Component {
                     width: hp('12%'),
                     elevation: 2,
                     borderRadius: 7,
-                    backgroundColor: 'white',
+                    backgroundColor: Colors.white,
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginLeft: wp('3%'),
@@ -401,7 +410,7 @@ class MohallaLanding extends Component {
                     width: hp('12%'),
                     elevation: 2,
                     borderRadius: 7,
-                    backgroundColor: 'white',
+                    backgroundColor: Colors.white,
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginLeft: wp('3%'),
@@ -417,7 +426,7 @@ class MohallaLanding extends Component {
                     width: hp('12%'),
                     elevation: 2,
                     borderRadius: 7,
-                    backgroundColor: 'white',
+                    backgroundColor: Colors.white,
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginLeft: wp('3%'),
@@ -433,7 +442,7 @@ class MohallaLanding extends Component {
                     width: hp('12%'),
                     elevation: 2,
                     borderRadius: 7,
-                    backgroundColor: 'white',
+                    backgroundColor: Colors.white,
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginLeft: wp('3%'),
@@ -449,7 +458,7 @@ class MohallaLanding extends Component {
                     width: hp('12%'),
                     elevation: 2,
                     borderRadius: 7,
-                    backgroundColor: 'white',
+                    backgroundColor: Colors.white,
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginLeft: wp('3%'),
