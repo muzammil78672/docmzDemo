@@ -1,5 +1,5 @@
 export default {
-  baseUrl: 'http://192.168.1.6:3001',
+  baseUrl: 'https://thawing-garden-24342.herokuapp.com',
   doctors: '/doctors',
   getDoctors: '/search',
   getSpecialities: '/get/specialties',
